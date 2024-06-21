@@ -54,9 +54,10 @@
         "output_schema": {
             "properties": {
                 "output_data": {
-                    "description": "Sleep piece executed",
-                    "title": "Output Data",
-                    "type": "object"
+                    "description": "List of records from the Google Sheet.",
+                    "items": {},
+                    "title": "Output Data.",
+                    "type": "array"
                 }
             },
             "required": [
@@ -68,7 +69,7 @@
         "secrets_schema": {
             "properties": {
                 "service_account_data": {
-                    "description": "Service account JSON data for Google Sheets API",
+                    "description": "Service account JSON data for Google Sheets API. Paste it as a string.",
                     "title": "Service Account",
                     "type": "string"
                 }
