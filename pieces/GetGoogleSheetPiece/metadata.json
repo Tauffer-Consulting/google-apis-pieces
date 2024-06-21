@@ -2,7 +2,7 @@
     "name": "GetGoogleSheetPiece",
     "description": "Read a google sheet file.",
     "dependency": {
-        "requirements": "requirements_0.txt"
+        "requirements_file": "requirements_0.txt"
     },
     "container_resources": {
         "requests": {
@@ -15,11 +15,10 @@
         }
     },
     "tags": [
-        "Example"
+        "Gooegle"
     ],
     "style": {
-        "node_label": "Example Sine Piece",
-        "icon_class_name": "fa-solid:database",
-        "node_label": "Get Google Sheet"
+        "node_label": "Get Google Sheet",
+        "icon_class_name": "hugeicons:google-sheet",
     }
 }

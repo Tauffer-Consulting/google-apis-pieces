@@ -13,12 +13,13 @@ class InputModel(BaseModel):
 
 
 class OutputModel(BaseModel):
-    output_data: dict = Field(
-        description="Sleep piece executed"
+    output_data: list = Field(
+        title="Output Data.",
+        description="List of records from the Google Sheet."
     )
 
 class SecretsModel(BaseModel):
     service_account_data: str = Field(
         title="Service Account",
-        description="Service account JSON data for Google Sheets API",
+        description="Service account JSON data for Google Sheets API. Paste it as a string.",
     )
