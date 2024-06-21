@@ -3,8 +3,7 @@
         "name": "GetGoogleSheetPiece",
         "dependency": {
             "dockerfile": null,
-            "requirements_file": null,
-            "requirements": "requirements_0.txt"
+            "requirements_file": "requirements_0.txt"
         },
         "tags": [
             "Example"
