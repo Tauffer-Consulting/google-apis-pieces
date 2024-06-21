@@ -25,5 +25,8 @@ class GetGoogleSheetPiece(BasePiece):
         records = worksheet.get_all_records()
         df = pd.DataFrame.from_records(records)
 
-        return OutputModel(output_data=df.to_json())
+        print('DF', df.to_dict())
+        print('df', df.to_dict(orient='records'))
+
+        return OutputModel(output_data=df.to_dict(orient='records'))
 
