@@ -2,7 +2,7 @@
     "name": "GetGoogleSheetPiece",
     "description": "Read a google sheet file.",
     "dependency": {
-        "requirements": "requirements_0.txt"
+        "requirements_file": "requirements_0.txt"
     },
     "container_resources": {
         "requests": {
