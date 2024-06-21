@@ -1,0 +1,16 @@
+{
+    "group0": {
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": null,
+            "requirements": "requirements_0.txt"
+        },
+        "pieces": [
+            "GetGoogleSheetPiece"
+        ],
+        "secrets": [
+            "service_account_data"
+        ],
+        "source_image": "ghcr.io/tauffer-consulting/google-apis-pieces:0.1.0-group0"
+    }
+}

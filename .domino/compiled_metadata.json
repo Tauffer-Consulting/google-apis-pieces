@@ -1,0 +1,85 @@
+{
+    "GetGoogleSheetPiece": {
+        "name": "GetGoogleSheetPiece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": null,
+            "requirements": "requirements_0.txt"
+        },
+        "tags": [
+            "Example"
+        ],
+        "style": {
+            "node_label": "Get Google Sheet",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "fa-solid:database",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "Read a google sheet file.",
+        "container_resources": {
+            "requests": {
+                "cpu": 100,
+                "memory": 128
+            },
+            "limits": {
+                "cpu": 500,
+                "memory": 512
+            }
+        },
+        "input_schema": {
+            "properties": {
+                "spreadsheet_name": {
+                    "description": "Name of the Google Sheets document",
+                    "title": "Spreadsheet Name",
+                    "type": "string"
+                },
+                "worksheet_number": {
+                    "description": "Number of the worksheet in the Google Sheets document.",
+                    "title": "Worksheet Number",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "spreadsheet_name",
+                "worksheet_number"
+            ],
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "properties": {
+                "output_data": {
+                    "description": "Sleep piece executed",
+                    "title": "Output Data",
+                    "type": "object"
+                }
+            },
+            "required": [
+                "output_data"
+            ],
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": {
+            "properties": {
+                "service_account_data": {
+                    "description": "Service account JSON data for Google Sheets API",
+                    "title": "Service Account",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "service_account_data"
+            ],
+            "title": "SecretsModel",
+            "type": "object"
+        },
+        "source_url": "https://github.com/Tauffer-Consulting/google-apis-pieces/tree/main/pieces/GetGoogleSheetPiece"
+    }
+}
